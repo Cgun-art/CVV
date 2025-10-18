@@ -100,9 +100,9 @@ void register_node_type_sh_bsdf_glossy()
   static blender::bke::bNodeType ntype;
 
   sh_node_type_base(&ntype, "ShaderNodeBsdfAnisotropic", SH_NODE_BSDF_GLOSSY);
-  ntype.ui_name = "Glossy BSDF";
+  ntype.ui_name = "Glossiness Map";
   ntype.ui_description =
-      "Reflection with microfacet distribution, used for materials such as metal or mirrors";
+      "A type of reflection that makes things look more premium or reflective.";
   ntype.enum_name_legacy = "BSDF_GLOSSY";
   ntype.nclass = NODE_CLASS_SHADER;
   ntype.declare = file_ns::node_declare;
