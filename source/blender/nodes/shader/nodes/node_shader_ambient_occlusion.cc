@@ -84,9 +84,9 @@ void register_node_type_sh_ambient_occlusion()
   static blender::bke::bNodeType ntype;
 
   sh_node_type_base(&ntype, "ShaderNodeAmbientOcclusion", SH_NODE_AMBIENT_OCCLUSION);
-  ntype.ui_name = "Ambient Occlusion";
+  ntype.ui_name = "Occlusion";
   ntype.ui_description =
-      "Compute how much the hemisphere above the shading point is occluded, for example to add "
+      "A fake, soft yet white shadow that helps darken colors & add a high level of realism, there's 2 types, Ambient occlusion, and SSAO which is the same, just used in games & OpenGL renders. this slows down renders. so be careful! "
       "weathering effects to corners.\nNote: For Cycles, this may slow down renders significantly";
   ntype.enum_name_legacy = "AMBIENT_OCCLUSION";
   ntype.nclass = NODE_CLASS_INPUT;
