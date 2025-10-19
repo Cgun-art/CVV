@@ -55,8 +55,8 @@ void register_node_type_sh_bsdf_hair()
   static blender::bke::bNodeType ntype;
 
   sh_node_type_base(&ntype, "ShaderNodeBsdfHair", SH_NODE_BSDF_HAIR);
-  ntype.ui_name = "Hair BSDF";
-  ntype.ui_description = "Reflection and transmission shaders optimized for hair rendering";
+  ntype.ui_name = "Fur";
+  ntype.ui_description = "Tries to simulate hair.";
   ntype.enum_name_legacy = "BSDF_HAIR";
   ntype.nclass = NODE_CLASS_SHADER;
   ntype.declare = file_ns::node_declare;
